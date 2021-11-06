@@ -1,0 +1,8 @@
+<f:layout name="Default"/>
+
+
+<f:section name="displayMode_social">
+    <f:for each="{addresses}" as="address">
+        <f:render section="social" partial="Social" arguments="{_all}"/>
+    </f:for>
+</f:section>

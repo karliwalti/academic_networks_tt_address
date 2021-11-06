@@ -1,0 +1,58 @@
+<f:section name="social">
+    <f:if condition="{address.orcid} || {address.twitter} || {address.facebook} || {address.linkedin} || {address.researchgate} || {address.researcherid} || {address.scholar}">
+        <ul >
+            <f:if condition="{address.twitter}">
+              <li>
+                  <span class="fa-li"><i class="fab fa-twitter"></i></span>
+                    <i class="fab fa-twitter-square fa-lg" aria-hidden title="{f:translate(key:'label.twitter')}"></i>
+                    <span class="sr-only">{f:translate(key:'label.twitter')}:</span>
+                    <a href="https://twitter.com/{address.twitter}" target="_blank">{address.twitter}</a>
+                    <meta itemprop="sameAs" content="https://twitter.com/{address.twitter}"/>
+                </li>
+            </f:if>
+            <f:if condition="{address.linkedin}">
+                <li class="list-inline-item">
+                    <i class="fab fa-linkedin fa-lg" aria-hidden title="{f:translate(key:'label.linkedin')}"></i>
+                    <span class="sr-only">{f:translate(key:'label.linkedin')}:</span>
+                    <a href="https://www.linkedin.com/in/{address.linkedin}" target="_blank">{address.linkedin}</a>
+                    <meta itemprop="sameAs" content="https://www.linkedin.com/in/{address.linkedin}"/>
+                </li>
+            </f:if>
+            <f:if condition="{address.orcid}">
+                <li >
+                    <i class="ai ai-orcid-square ai-lg" aria-hidden title="{f:translate(key:'label.orcid')}"></i>
+                    <span class="sr-only">{f:translate(key:'label.orcid')}:</span>
+                    <a href="https://orcid.org/{address.orcid}">{address.orcid}</a>
+                    <meta itemprop="sameAs" content="https://orcid.org/{address.orcid}"/>
+                </li>
+            </f:if>
+            <f:if condition="{address.scholar}">
+                <li >
+                    <span class="fa-li"><i class="ai ai-google-scholar"></i></span>
+                    <i class="ai ai-google-scholar-square ai-lg" aria-hidden title="{f:translate(key:'label.scholar')}"></i>
+                    <span class="sr-only">{f:translate(key:'label.scholar')}:</span>
+                    <a href="https://scholar.google.com/citations?user={address.scholar}">{address.scholar}</a>
+                    <meta itemprop="sameAs" content="https://scholar.google.com/citations?user={address.scholar}"/>
+                </li>
+            </f:if>
+            <f:if condition="{address.researchgate}">
+                <li >
+                    <span class="fa-li"><i class="ai ai-researchgate"></i></span>
+                    <i class="ai ai-researchgate-square ai-lg" aria-hidden title="{f:translate(key:'label.researchgate')}"></i>
+                    <span class="sr-only">{f:translate(key:'label.researchgate')}:</span>
+                    <a href="https://www.researchgate.net/profile/{address.researchgate}">{address.researchgate}</a>
+                    <meta itemprop="sameAs" content="https://www.researchgate.net/profile/{address.researchgate}"/>
+                </li>
+            </f:if>
+            <f:if condition="{address.researcherid}">
+                <li >
+                    <span class="fa-li"><i class="ai ai-researcherid"></i></span>
+                    <i class="ai ai-researcherid-square ai-lg" aria-hidden title="{f:translate(key:'label.researcherid')}"></i>
+                    <span class="sr-only">{f:translate(key:'label.researcherid')}:</span>
+                    <a href="https://publons.com/researcher/{address.researcherid}">{address.researcherid}</a>
+                    <meta itemprop="sameAs" content="https://publons.com/researcher/{address.researcherid}"/>
+                </li>
+            </f:if>
+        </ul>
+    </f:if>
+</f:section>
