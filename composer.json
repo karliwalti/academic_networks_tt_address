@@ -1,0 +1,49 @@
+{
+  "name": "karliwalti/academic-networks-tt-address",
+  "type": "typo3-cms-extension",
+  "description": "Displays a list of academic social networks within the tt_address module.",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "addresses"
+  ],
+  "homepage": "https://github.com/karliwalti/academic-networks-tt-address",
+  "authors": [
+    {
+      "name": "Karlen Walter",
+      "role": "Developer"
+    }
+  ],
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "typo3/cms-core": "^9.5.20 || ^10.4.6",
+    "php": ">=7.2"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "academic_networks_tt_address",
+      "app-dir": ".Build",
+      "web-dir": ".Build/Web"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "karliwalti\\AcademicNetworksTtAddress\\": "Classes"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "karliwalti\AcademicNetworksTtAddress\\Tests\\": "Tests"
+    }
+  },
+  "replace": {
+    "typo3-ter/academic-networks-tt-address": "self.version"
+  },
+  "require-dev": {
+    "php-coveralls/php-coveralls": "^2.1"
+  },
+  "config": {
+    "vendor-dir": ".Build/vendor",
+    "bin-dir": ".Build/bin"
+  }
+}
