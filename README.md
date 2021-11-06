@@ -18,9 +18,9 @@ Follow the instructions of the tt_address manual: https://docs.typo3.org/p/frien
 
 1. install EXT:extender https://docs.typo3.org/p/evoweb/extender/8.0/en-us/Installation/Index.html
 2. install EXT:academic_networks_tt_address
-3. use the new fields in the frontend templates of tt_address (see example in [Resources\Private\](Resources\Private\) folder)
+3. use the new fields in the frontend templates of tt_address (see example in https://github.com/karliwalti/academic_networks_tt_address/tree/main/Resources/Private folders)
 optional:
-4. add academicons css style to your pages for adding icons in template (see example in [Resources\Private\](Resources\Private\) folder)
+4. add academicons css style to your pages for adding icons in template (see example in https://github.com/karliwalti/academic_networks_tt_address/tree/main/Resources/Private folders)
 
 
 ### composer
